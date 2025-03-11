@@ -6,7 +6,7 @@ model=genai.GenerativeModel('gemini-1.5-flash')
 if "chat" not in st.session_state:
   st.session_state.chat=model.start_chat(history=[])
 st.title(" chatbot - Your nightmare")
-st.write( 🤖 "This is a chatbot made by Sindhu...")
+st.write( "🤖 This is a chatbot made by Sindhu...")
 if "messages" not in st.session_state:
   st.session_state.messages=[]
 for message in st.session_state.messages:
